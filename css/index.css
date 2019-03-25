@@ -1,3 +1,450 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	/* list-style: none; */
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+	margin: auto;
+    
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/*---------------My Styles-----------------------------------------*/
+
+
+body {
+    max-width: 1140px;
+}
+
+header {
+    display: flex;
+    margin-top:20px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    padding-top: 10px;
+    vertical-align: top;
+}
+
+nav a {
+    color:black;
+    text-decoration: none;
+    margin-left: 50px;
+    padding:20px;
+    color: gray;
+}
+
+
+ul{
+    margin-top: 40px;
+}
+
+li {
+    line-height: 2.5;
+    margin-left: 20px;
+}
+
+.main-wrap {
+    width:100%;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+
+@media(max-width:800px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    nav {
+        display: flex;
+        padding:0;
+        margin:0;
+        flex-basis: 100%;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    nav a {
+        padding: 0;
+        margin: 1em 0 0;
+    }
+
+    .nav-wrapper {
+        display: block;
+        width: 100%;
+    }
+
+    .logo-wrapper {
+        display: block;
+        order: -1;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 500px) {
+    header {
+        margin:0;
+        display: flex;
+        flex-direction: column;
+        width:100%;
+     
+    }
+ 
+    .logo {
+        width: 200px;
+        padding: 10px 0; 
+        margin: 0 auto;
+        order: -1;
+  
+ 
+    }
+ 
+     nav {
+        padding: 0;
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid black;
+    }
+ 
+    nav a {
+        margin:0;
+        border-bottom: 1px solid black;
+        text-align: center;
+        padding: 1em 0;
+    }
+}
+   
+
+
+/* hero section */
+
+.hero {
+    display:flex;
+    
+    height: 500px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-bottom: 2px solid black;
+
+}
+
+.cta {
+    padding: 50px 200px 50px;
+}
+
+.header {
+    display:block;
+    width: 300px;
+}
+
+button.cta-button {
+	margin-left: 50px;
+}
+
+.big {
+    padding-left:150px;
+    margin-left: 20px;
+    background-image: url("../img/header-img.png");
+    background-size: cover;
+    width: 400px;
+    height:400px;
+}
+
+@media(max-width: 500px) {
+    .hero{
+        display: flex;
+        width:100%;
+        margin: 0;
+        height: 400px;
+        margin-top:20px;
+    }
+    .cta{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+
+    .big{
+        display: none;
+    }
+}
+
+
+
+/*----------------cta-----------------------------*/
+
+
+@media(max-width:800px){
+    .big{
+        display: none;
+    }
+
+    .cta{
+        margin: 0 auto;
+    }
+}
+
+.slogan {
+    font-family: 'Bangers', cursive;
+    font-size: 75px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.slogan-span{
+	display: block;
+}
+
+button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 60px;
+    background-color: white;
+    background: white;
+    border: 1px solid black;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+}
+
+/* upper-content */
+
+.upper-info{
+    display:flex;
+    margin: 30px 0;
+
+}
+
+.info{
+    font-size: 20px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:500px){
+    .upper-info{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%
+    }
+    .info{
+        width: 100%;
+    }
+}
+
+/* spread image */
+
+.big-image{
+    background-image: url("../img/mid-page-accent.jpg");
+    background-size:cover;
+    height:200px;
+    width:100%;
+    margin-bottom: 50px;
+}
+
+@media(max-width:500px){
+    .big-image{
+        width: 100%
+    }
+}
+
+/* bottom content */
+
+.bottom-info{
+	display: flex;
+	border-bottom: 2px solid black;
+	margin-bottom: 40px;
+	
+	font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.third-info{
+    font-size: 20px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+
+}
+
+@media(max-width:500px) {
+    .bottom-info{
+        flex-direction: column;
+    }
+
+    .third-info{
+        width:100%;
+    }
+}
+
+
+
+/* footer */
+
+address {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.phone {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.email {
+    text-decoration: none;
+    color: black;
+}
+
+.copy {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+
+@media(max-width:500px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+       
+    }
+}
+
+
+/* Services page------------------------------------------------- */
+
+.services-header-img{
+    background-image: url("../img/services-header.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 1140px;
+    margin-bottom:40px;
+}
+
+.service-title{
+    font-size: 30px
+}
+
+.service-header{
+	height: 150px;
+	border-bottom: 2px solid black;
+}
+
+.master{
+    display:flex;
+    margin-top: 40px;
+}
+
+.card-parent {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+
+    justify-content:flex-start;
+    width:48%;
+    height: 200px;
+    background-color: #d1d0d0;
+    margin-bottom:20px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+
+button.push{
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.service-container{
+    display:flex;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    margin-top: 40px;
+    padding-top: 50px;
+}
+
+.services-facts{
+    width: 50%;
+    margin:10px;
+}
+
+.services-info-img{
+    background-image: url("../img/services-info.png");
+    background-size: cover;
+    height:100%;
+    width:100%;
+}
+
 
